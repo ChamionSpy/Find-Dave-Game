@@ -1,0 +1,86 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: url("imgs/wallpaper.jpg");
+  background-size: cover;
+}
+
+#board{
+  width: 540px;
+  height: 200px;
+  background: url("imgs/soil.png");
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap
+}
+
+#board div{
+  /*board = 540x540, divide into 3x3*/
+  width: 180px;
+  height: 180px;
+  background-image: url("imgs/hole.png");
+  background-size: 200px 200px;
+}
+
+#board div img {
+  max-width: 100px;
+  max-height: 100px;
+  padding-top: 50px;
+  padding-left: 30px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#board div img:hover {
+  cursor: pointer;
+}
+
+h1 {
+  position: relative; /* Set the relative positioning for the h1 container */
+  display: inline-block; /* Ensure the h1 container wraps around its content */
+}
+
+.kevin-container {
+  position: absolute; /* Position the container absolutely within the h1 */
+  bottom: 0; /* Align the bottom of the container with the bottom of the h1 */
+  left: 0; /* Align the container to the left of the h1 (adjust as needed) */
+}
+
+.kevin {
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#timer {
+  font-size: 50px;
+  color: grey;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#startButton {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#startButton:hover {
+  background-color: #ffe600;
+}
+
+#score{
+  color: black;
+}
